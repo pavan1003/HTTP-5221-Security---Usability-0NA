@@ -1,0 +1,8 @@
+/*LAB 3 - UNIT TESTING */
+.passed {
+    color: green;
+}
+
+.failed {
+    color: red;
+}
