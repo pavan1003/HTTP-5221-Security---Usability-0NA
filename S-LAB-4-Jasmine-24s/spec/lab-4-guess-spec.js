@@ -18,15 +18,15 @@ describe("Test guessNum Function", function () {
       var testNum = "";
       expect(guessNum(testNum)).toEqual("A value was not entered.");
     });
-    it("Should return string 'Way off! Pick between 1 and 10.' for value outside 1 to 10", function () {
+    it("Should return string 'Way off!!!! Pick between 1 and 10.' for value outside 1 to 10", function () {
       var testNum = 44; 
-      expect(guessNum(testNum)).toEqual("Way off! Pick between 1 and 10.");
+      expect(guessNum(testNum)).toEqual("Way off!!!! Pick between 1 and 10.");
     });
   });
   describe("guessNum Boundary tests ", function () {
-    it("Should return string 'Way off! Pick between 1 and 10.' for guess 0", function () {
+    it("Should return string 'Way off!!!! Pick between 1 and 10.' for guess 0", function () {
       var testNum = 0;
-      expect(guessNum(testNum)).toEqual("Way off! Pick between 1 and 10.");
+      expect(guessNum(testNum)).toEqual("Way off!!!! Pick between 1 and 10.");
     });
     it("Should return string 'Guess again.' for guess number 1", function () {
       var testNum = 1;
@@ -36,9 +36,9 @@ describe("Test guessNum Function", function () {
       var testNum = 2;
       expect(guessNum(testNum)).toEqual("Guess again.");
     });
-    it("Should return string 'Way off! Pick between 1 and 10.' for guess number 11", function () {
+    it("Should return string 'Way off!!!! Pick between 1 and 10.' for guess number 11", function () {
       var testNum = 11; 
-      expect(guessNum(testNum)).toEqual("Way off! Pick between 1 and 10.");
+      expect(guessNum(testNum)).toEqual("Way off!!!! Pick between 1 and 10.");
     });
     it("Should return string 'Guess again.' for guess number 10", function () {
         var testNum = 10;

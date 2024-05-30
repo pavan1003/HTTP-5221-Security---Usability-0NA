@@ -7,7 +7,7 @@ function guessNum(guess) {
     var returnMessage = "";
     var noNumber = "A number was not input.";
     var noInput = "A value was not entered.";
-    var outOfRange = "Way off! Pick between 1 and 10.";
+    var outOfRange = "Way off!!!! Pick between 1 and 10."; // added 3 ! according to the document
     var correct = "You guessed it!";
     var validIncorrect = "Guess again.";
 
