@@ -16,15 +16,15 @@ function test__checkHumberId(valueIn, expected) {
     data.innerHTML += msg;
 }
 
-test__checkHumberId("xn12345678", false); //TEST TO PASS 
+test__checkHumberId("xn12345678", false); //TEST TO FAIL 
 test__checkHumberId("n12345678", true); //TEST TO PASS
 test__checkHumberId("N12345678", true); //TEST TO PASS
-test__checkHumberId("x12345678", false); //TEST TO PASS
-test__checkHumberId(null, false); //TEST TO PASS
-test__checkHumberId(undefined, false); //TEST TO PASS
-test__checkHumberId(true, false); //TEST TO PASS
-test__checkHumberId("n1234567", false); //TEST TO PASS BOUNDRY TESTING
-test__checkHumberId("n123456789", false); //TEST TO PASS
+test__checkHumberId("x12345678", false); //TEST TO FAIL
+test__checkHumberId(null, false); //TEST TO FAIL
+test__checkHumberId(undefined, false); //TEST TO FAIL
+test__checkHumberId(true, false); //TEST TO FAIL
+test__checkHumberId("n1234567", false); //TEST TO FAIL BOUNDRY TESTING
+test__checkHumberId("n123456789", false); //TEST TO FAIL
 test__checkHumberId("n99999999", true); //TEST TO PASS
 test__checkHumberId("n00000000", true); //TEST TO PASS
 test__checkHumberId("ASFASDF", true); //TEST TO FAIL
