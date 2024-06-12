@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Lab Login</title>
+	<link rel="stylesheet" href="S-Assignment-1-LoginTesting-24s.css" type="text/css">
+</head>
+
+<body>
+	<main>
+		<h1>Login Page</h1>
+		<!--==== LOGIN FORM BLOCK ====-->
+		<div>
+			<form class="login" name="login" action="#" method="POST">
+				<fieldset class="login__fieldset">
+					<legend>User Authentication</legend>
+					<label class="login__label">Username:</label>
+					<input class="login__txtbox login__username" type="text" name="username" />
+					<label class="login__label">Password:</label>
+					<input class="login__txtbox login__password" type="password" name="password" />
+					<input class="login__button" type="submit" value="Log in" />
+				</fieldset>
+			</form>
+		</div>
+
+		<!--==== OUTPUT BLOCK ====-->
+		<div class="output" id="output">
+		</div>
+		<!--END output BLOCK-->
+	</main>
+
+	<script src="jasmine/lib/md5.js"></script>
+	<script src="jasmine/src/md5Encrypt.js"></script>
+	<script src="jasmine/src/checkLogin.js"></script>
+	<script src="S-Assignment-1-LoginTesting-24s.js"></script>
+</body>
+
+</html>
