@@ -26,6 +26,7 @@ describe("Test to FAIL", () => {
     cy.get(".login__password").should("contain", "");
     cy.get(".login").submit();
     cy.get(".login__username").should("have.focus");
+    cy.get(".login__username").should('have.class', 'login__txtbox_error');
   });
   it("Name box has input text, with empty password box", () => {
     cy.visit("./S-Lab-5-codestandards.html");
@@ -33,5 +34,6 @@ describe("Test to FAIL", () => {
     cy.get(".login__password").should("contain", "");
     cy.get(".login").submit();
     cy.get(".login__password").should("have.focus");
+    cy.get(".login__password").should('have.class', 'login__txtbox_error');
   });
 });
